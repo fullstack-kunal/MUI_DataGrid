@@ -53,6 +53,8 @@ export default function CustomDataGridWithFilters() {
             renderHeader: () => (
               <AdminFilter column={colDef} onFilterChange={(value) => handleFilterChange(colDef.field, value)} />
             ),
+            filterable:true,
+            filterOperators:"is"
           };
         }
         return colDef;
